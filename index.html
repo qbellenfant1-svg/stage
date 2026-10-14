@@ -3,23 +3,128 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inscription - Stage Annetta Lucero</title>
-<meta http-equiv="refresh" content="0;url=mailto:secretariat.cd91@outlook.fr?subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0D%0A%0D%0ANom%20%3A%0D%0APr%C3%A9nom%20%3A%0D%0AClub%20%3A%0D%0ANum%C3%A9ro%20de%20licence%20%3A%0D%0ACat%C3%A9gorie%20%3A%0D%0AFili%C3%A8re%20%3A">
+<title>Inscription - Stage américain Annetta LUCERO</title>
 <style>
-  body{font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;background:#111;color:#fff;text-align:center;padding:20px}
-  #fallback{display:none}
-  a.btn{display:inline-block;margin-top:20px;padding:16px 28px;background:#fff;color:#111;border-radius:999px;font-weight:700;text-decoration:none}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;min-height:100vh;min-height:100dvh;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:#0b1535;color:#fff;
+    display:flex;
+    padding:clamp(12px,4vw,24px);
+    overflow-x:hidden
+  }
+  #flag{position:fixed;inset:0;width:100%;height:100%;opacity:.3;z-index:-2}
+  .veil{position:fixed;inset:0;z-index:-1;
+    background:radial-gradient(circle at 50% 40%,rgba(11,21,53,.25),rgba(11,21,53,.75))}
+  .card{
+    width:100%;max-width:440px;margin:auto;text-align:center;
+    padding:clamp(22px,6vw,36px) clamp(16px,5vw,28px) clamp(20px,5vw,30px);
+    border-radius:clamp(20px,6vw,28px);
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.28);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    box-shadow:0 20px 60px rgba(0,0,0,.45)
+  }
+  .tag{display:inline-block;padding:6px 14px;border-radius:999px;
+    background:#fff;color:#b22234;font-weight:800;font-size:clamp(11px,3vw,12px);letter-spacing:.12em;text-transform:uppercase}
+  h1{
+    margin:clamp(12px,4vw,18px) 0 6px;
+    font-size:clamp(22px,7.2vw,36px);line-height:1.1;font-weight:900;
+    text-wrap:balance;overflow-wrap:anywhere
+  }
+  h1 span{display:block;font-size:clamp(15px,4.6vw,19px);font-weight:600;opacity:.92;margin-top:10px}
+  .date{margin:10px 0 clamp(18px,5vw,24px);font-size:clamp(16px,4.6vw,18px);font-weight:700;color:#ffd7db}
+  .btn{
+    display:block;padding:clamp(14px,4vw,17px) 18px;border-radius:999px;
+    background:linear-gradient(135deg,#e63946,#b22234);color:#fff;
+    font-weight:800;font-size:clamp(16px,4.6vw,18px);text-decoration:none;
+    box-shadow:0 10px 26px rgba(178,34,52,.55);
+    transition:transform .15s
+  }
+  .btn:active{transform:scale(.97)}
+  .alt{margin-top:16px;font-size:clamp(12px,3.5vw,13px);opacity:.85}
+  .alt a{color:#fff;font-weight:700;text-underline-offset:3px;margin:0 6px}
+  .info{margin-top:18px;font-size:clamp(12px,3.5vw,13px);line-height:1.5;opacity:.8;overflow-wrap:anywhere}
+
+  /* Écrans très petits ou paysage : on compacte */
+  @media (max-height:560px){
+    .card{padding-top:18px;padding-bottom:18px}
+    .info{display:none}
+  }
+  /* Grands écrans */
+  @media (min-width:768px){
+    .card{max-width:480px}
+  }
 </style>
 </head>
 <body>
-  <div id="fallback">
-    <h1>Stage Annetta Lucero<br>25 octobre 2026</h1>
-    <a class="btn" href="mailto:secretariat.cd91@outlook.fr?subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0D%0A%0D%0ANom%20%3A%0D%0APr%C3%A9nom%20%3A%0D%0AClub%20%3A%0D%0ANum%C3%A9ro%20de%20licence%20%3A%0D%0ACat%C3%A9gorie%20%3A%0D%0AFili%C3%A8re%20%3A">Ouvrir l'e-mail d'inscription</a>
-    <p style="margin-top:30px;font-size:14px;opacity:.7">Ou écris à secretariat.cd91@outlook.fr avec nom, prénom, club, n° de licence, catégorie et filière.</p>
-  </div>
-  <script>
-    window.location.replace("mailto:secretariat.cd91@outlook.fr?subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0D%0A%0D%0ANom%20%3A%0D%0APr%C3%A9nom%20%3A%0D%0AClub%20%3A%0D%0ANum%C3%A9ro%20de%20licence%20%3A%0D%0ACat%C3%A9gorie%20%3A%0D%0AFili%C3%A8re%20%3A");
-    setTimeout(function(){ document.getElementById('fallback').style.display='block'; }, 2000);
-  </script>
+
+<!-- Drapeau américain en arrière-plan -->
+<svg id="flag" viewBox="0 0 190 100" preserveAspectRatio="xMinYMid slice" aria-hidden="true">
+  <rect width="190" height="100" fill="#fff"/>
+  <g id="stripes" fill="#b22234"></g>
+  <rect width="76" height="53.85" fill="#3c3b6e"/>
+  <g id="stars" fill="#fff"></g>
+</svg>
+<div class="veil"></div>
+
+<main class="card">
+  <span class="tag">Inscription</span>
+  <h1>STAGE AMÉRICAIN<span>Annetta LUCERO - CD 91</span></h1>
+  <div class="date">📅 25 octobre 2026</div>
+
+  <a class="btn" href="mailto:secretariat.cd91@outlook.fr?subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0D%0A%0D%0ANom%20%3A%0D%0APr%C3%A9nom%20%3A%0D%0AClub%20%3A%0D%0ANum%C3%A9ro%20de%20licence%20%3A%0D%0ACat%C3%A9gorie%20%3A%0D%0AFili%C3%A8re%20%3A">✉️ S'inscrire par e-mail</a>
+
+  <p class="alt">Ou ouvrir avec :
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=secretariat.cd91@outlook.fr&amp;su=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0A%0ANom%20%3A%0APr%C3%A9nom%20%3A%0AClub%20%3A%0ANum%C3%A9ro%20de%20licence%20%3A%0ACat%C3%A9gorie%20%3A%0AFili%C3%A8re%20%3A">Gmail</a> ·
+    <a href="https://outlook.live.com/mail/0/deeplink/compose?to=secretariat.cd91@outlook.fr&amp;subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0A%0ANom%20%3A%0APr%C3%A9nom%20%3A%0AClub%20%3A%0ANum%C3%A9ro%20de%20licence%20%3A%0ACat%C3%A9gorie%20%3A%0AFili%C3%A8re%20%3A">Outlook</a>
+  </p>
+
+  <p class="info">
+    N'oublie pas d'indiquer : nom, prénom, club,<br>
+    n° de licence, catégorie et filière.<br>
+    📧 secretariat.cd91@outlook.fr
+  </p>
+</main>
+
+<script>
+  var NS = "http://www.w3.org/2000/svg";
+
+  // 7 bandes rouges
+  var stripes = document.getElementById("stripes");
+  var h = 100 / 13;
+  for (var i = 0; i < 13; i += 2) {
+    var r = document.createElementNS(NS, "rect");
+    r.setAttribute("x", 0);
+    r.setAttribute("y", i * h);
+    r.setAttribute("width", 190);
+    r.setAttribute("height", h);
+    stripes.appendChild(r);
+  }
+
+  // 50 étoiles (9 rangées : 6 puis 5)
+  function star(cx, cy, R) {
+    var pts = [];
+    for (var k = 0; k < 10; k++) {
+      var rad = k % 2 === 0 ? R : R * 0.4;
+      var a = -Math.PI / 2 + k * Math.PI / 5;
+      pts.push((cx + rad * Math.cos(a)).toFixed(2) + "," + (cy + rad * Math.sin(a)).toFixed(2));
+    }
+    var p = document.createElementNS(NS, "polygon");
+    p.setAttribute("points", pts.join(" "));
+    return p;
+  }
+  var stars = document.getElementById("stars");
+  var dx = 76 / 12, dy = 53.85 / 10;
+  for (var row = 0; row < 9; row++) {
+    var n = row % 2 === 0 ? 6 : 5;
+    for (var c = 0; c < n; c++) {
+      var x = (row % 2 === 0 ? 1 + 2 * c : 2 + 2 * c) * dx;
+      stars.appendChild(star(x, (row + 1) * dy, 2.6));
+    }
+  }
+</script>
 </body>
 </html>
