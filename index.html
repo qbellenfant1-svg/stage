@@ -4,20 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inscription - Stage Annetta Lucero</title>
+<meta http-equiv="refresh" content="0;url=mailto:secretariat.cd91@outlook.fr?subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0D%0A%0D%0ANom%20%3A%0D%0APr%C3%A9nom%20%3A%0D%0AClub%20%3A%0D%0ANum%C3%A9ro%20de%20licence%20%3A%0D%0ACat%C3%A9gorie%20%3A%0D%0AFili%C3%A8re%20%3A">
 <style>
   body{font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;background:#111;color:#fff;text-align:center;padding:20px}
+  #fallback{display:none}
   a.btn{display:inline-block;margin-top:20px;padding:16px 28px;background:#fff;color:#111;border-radius:999px;font-weight:700;text-decoration:none}
 </style>
 </head>
 <body>
-  <div>
+  <div id="fallback">
     <h1>Stage Annetta Lucero<br>25 octobre 2026</h1>
-    <p>Appuie sur le bouton pour ouvrir ton e-mail d'inscription.</p>
-    <a class="btn" id="mail" href="mailto:secretariat.cd91@outlook.fr?subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0D%0A%0D%0ANom%20%3A%0D%0APr%C3%A9nom%20%3A%0D%0AClub%20%3A%0D%0ANum%C3%A9ro%20de%20licence%20%3A%0D%0ACat%C3%A9gorie%20%3A%0D%0AFili%C3%A8re%20%3A">S'inscrire par e-mail</a>
-    <p style="margin-top:30px;font-size:14px;opacity:.7">Ça ne marche pas ? Écris à secretariat.cd91@outlook.fr avec nom, prénom, club, n° de licence, catégorie et filière.</p>
+    <a class="btn" href="mailto:secretariat.cd91@outlook.fr?subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0D%0A%0D%0ANom%20%3A%0D%0APr%C3%A9nom%20%3A%0D%0AClub%20%3A%0D%0ANum%C3%A9ro%20de%20licence%20%3A%0D%0ACat%C3%A9gorie%20%3A%0D%0AFili%C3%A8re%20%3A">Ouvrir l'e-mail d'inscription</a>
+    <p style="margin-top:30px;font-size:14px;opacity:.7">Ou écris à secretariat.cd91@outlook.fr avec nom, prénom, club, n° de licence, catégorie et filière.</p>
   </div>
   <script>
-    setTimeout(function(){ window.location.href = document.getElementById('mail').href; }, 600);
+    window.location.replace("mailto:secretariat.cd91@outlook.fr?subject=Inscription%20-%20Stage%20Annetta%20Lucero%20-%2025%20octobre%202026&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20m%E2%80%99inscrire%20au%20stage%20avec%20Annetta%20Lucero%20du%2025%20octobre%202026.%0D%0A%0D%0ANom%20%3A%0D%0APr%C3%A9nom%20%3A%0D%0AClub%20%3A%0D%0ANum%C3%A9ro%20de%20licence%20%3A%0D%0ACat%C3%A9gorie%20%3A%0D%0AFili%C3%A8re%20%3A");
+    setTimeout(function(){ document.getElementById('fallback').style.display='block'; }, 2000);
   </script>
 </body>
 </html>
